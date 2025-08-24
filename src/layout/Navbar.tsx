@@ -19,7 +19,7 @@ return (
 <Container sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 <Box component={RouterLink} to="/" sx={{ display: "flex", alignItems: "center", gap: 1.5, textDecoration: "none", color: "text.primary" }} aria-label="NVL Digital Imaging LLP">
 <Box sx={{ width: 36, height: 36, borderRadius: 2, background: "linear-gradient(135deg,#d4af37,#b68b20)", boxShadow: "0 0 24px rgba(212,175,55,0.25)" }} />
-<Typography variant="h6" component="strong">NVL Digital Imaging LLP</Typography>
+<Typography variant="h6" component="strong">NVL Digital Imaging</Typography>
 </Box>
 <Box>
 <Button component={NavLink} to="/" end sx={linkSx} color="inherit">Home</Button>

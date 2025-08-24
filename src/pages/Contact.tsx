@@ -46,7 +46,13 @@ export default function Contact() {
         </Grid>
 
         <Grid size={{ xs: 12, md: 5 }}>
-          <Paper sx={{ p: 3 }}>
+          <Paper sx={{ p: 3 , height: "100%",
+                transition: "all .25s ease",
+                "&:hover": {
+                  boxShadow: "0 0 24px rgba(212,175,55,0.25)",
+                  borderColor: "#2b2b2b",
+                  transform: "translateY(-4px)",
+                },}} >
             <Typography variant="h6" sx={{ color: "primary.main", mb: 1 }}>
               Reach us directly
             </Typography>

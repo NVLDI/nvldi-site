@@ -53,7 +53,11 @@ export default function Projects() {
               sx={{
                 height: "100%",
                 transition: "all .25s",
-                "&:hover": { transform: "scale(1.01)" },
+               "&:hover": {
+                  boxShadow: "0 0 24px rgba(212,175,55,0.25)",
+                  borderColor: "#2b2b2b",
+                  transform: "translateY(-4px)",
+                },
               }}
             >
               <CardMedia
