@@ -1,32 +1,35 @@
-/* =========================
-src/pages/About.tsx
-========================= */
-import { motion } from 'framer-motion'
+// =====================================
+// src/pages/About.tsx
+// =====================================
+
+import { Container, Typography, Grid, Paper, Box } from "@mui/material";
 
 
-export function About(){
+export default function About() {
 return (
-<section className="section">
-<div className="container">
-<h2 className="section-title">About NVL Digital Imaging LLP</h2>
-<p className="section-sub">Incorporated April 2019 • Chennai, India</p>
+<Container sx={{ py: 8 }}>
+<Typography variant="h3" gutterBottom>About NVL Digital Imaging LLP</Typography>
+<Typography color="text.secondary" sx={{ mb: 4 }}>Incorporated April 2019 • Chennai, India</Typography>
 
 
-<div className="card" style={{display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:20}}>
-<img alt="Founder portrait placeholder" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1400&auto=format&fit=crop" style={{width:'100%', borderRadius:12, border:'1px solid var(--stroke)'}}/>
-<div>
-<motion.h3 className="gold" initial={{opacity:0}} animate={{opacity:1}}>Founder & CEO: Venkatesan Chandra Sekaran</motion.h3>
-<p>
+<Grid container spacing={3}>
+<Grid item xs={12} md={5}>
+<Box component="img" alt="Founder portrait placeholder" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1400&auto=format&fit=crop" sx={{ width: "100%", borderRadius: 2, border: "1px solid #1a1a1a" }} />
+</Grid>
+<Grid item xs={12} md={7}>
+<Paper sx={{ p: 3 }}>
+<Typography variant="h5" sx={{ color: "primary.main", mb: 2 }}>Founder & CEO: Venkatesan Chandra Sekaran</Typography>
+<Typography sx={{ mb: 2 }}>
 NVL is a founder-driven engineering studio. Every core product — from RIP & color systems to cloud SaaS for clinics — has been personally designed and built by the CEO, ensuring uncompromising technical depth and velocity.
-</p>
-<ul>
+</Typography>
+<ul style={{ marginTop: 0 }}>
 <li>Registered Address: 2nd Floor, 5/29 Pudu Street, Thathankuppam, Villivakkam, Chennai – 600049</li>
 <li>Domains: RIP & Imaging • Dental SaaS • Medical Visualization • Cloud Automation</li>
 <li>Stack: LittleCMS, Qt, Ghostscript, OpenCV • React/React Native • AWS (Amplify, AppSync, DynamoDB, S3, Lambda)</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-)
+</Paper>
+</Grid>
+</Grid>
+</Container>
+);
 }

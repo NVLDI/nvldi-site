@@ -1,54 +1,37 @@
-/* =========================
-src/pages/Services.tsx
-========================= */
-import { motion } from 'framer-motion'
+// =====================================
+// src/pages/Services.tsx
+// =====================================
+
+import { Container, Typography, Grid, Paper } from "@mui/material";
 
 
-export function Services(){
+const services = [
+{ title: "Product Engineering (RIP)", desc: "LittleCMS-based ICC workflows, linearization, nesting, Ghostscript integration, real‑time rendering with OpenCV, and Qt desktop UIs." },
+{ title: "Automation & Hot Folders", desc: "Headless pipelines that watch, process, and deliver jobs automatically — with audit trails, profiles, and fail‑safes." },
+{ title: "Dental Icons (SaaS)", desc: "Cross‑platform app (React Native + Web) for appointments, follow‑ups, and secure media. Push notifications & role‑based access." },
+{ title: "Patient Management", desc: "AWS‑backed system using Cognito, AppSync, DynamoDB, S3 — per‑clinic isolation, billing metrics, and analytics." },
+{ title: "DICOM Viewer", desc: "Web/mobile visualization (Cornerstone/VTK.js) with 3D stack views, export to STL/PLY, and low‑latency streaming." },
+{ title: "AWS End‑to‑End", desc: "Amplify, AppSync, DynamoDB, S3, Lambda, SES/SNS — automated clinic onboarding, infra as code, and usage‑based billing." },
+];
+
+
+export default function Services() {
 return (
-<section className="section">
-<div className="container">
-<h2 className="section-title">Services</h2>
-<p className="section-sub">Two pillars: deep product engineering for RIP/imaging, and modern cloud SaaS for clinics & labs.</p>
+<Container sx={{ py: 8 }}>
+<Typography variant="h3" gutterBottom>Services</Typography>
+<Typography color="text.secondary" sx={{ mb: 4 }}>Two pillars: deep product engineering for RIP/imaging, and modern cloud SaaS for clinics & labs.</Typography>
 
 
-<div className="card-grid">
-<motion.div whileHover={{y:-4}} className="card">
-<h3 className="gold">Product Engineering (RIP)</h3>
-<p>LittleCMS-based ICC workflows, linearization, nesting, Ghostscript integration, real‑time rendering with OpenCV, and Qt desktop UIs.</p>
-</motion.div>
-
-
-<motion.div whileHover={{y:-4}} className="card">
-<h3 className="gold">Automation & Hot Folders</h3>
-<p>Headless pipelines that watch, process, and deliver jobs automatically — with audit trails, profiles, and fail‑safes.</p>
-</motion.div>
-
-
-<motion.div whileHover={{y:-4}} className="card">
-<h3 className="gold">Dental Icons (SaaS)</h3>
-<p>Cross‑platform app (React Native + Web) for appointments, follow‑ups, and secure media. Push notifications & role‑based access.</p>
-</motion.div>
-
-
-<motion.div whileHover={{y:-4}} className="card">
-<h3 className="gold">Patient Management</h3>
-<p>AWS‑backed system using Cognito, AppSync, DynamoDB, S3 — per‑clinic isolation, billing metrics, and analytics.</p>
-</motion.div>
-
-
-<motion.div whileHover={{y:-4}} className="card">
-<h3 className="gold">DICOM Viewer</h3>
-<p>Web/mobile visualization (Cornerstone/VTK.js) with 3D stack views, export to STL/PLY, and low‑latency streaming.</p>
-</motion.div>
-
-
-<motion.div whileHover={{y:-4}} className="card">
-<h3 className="gold">AWS End‑to‑End</h3>
-<p>Amplify, AppSync, DynamoDB, S3, Lambda, SES/SNS — automated clinic onboarding, infra as code, and usage‑based billing.</p>
-</motion.div>
-</div>
-</div>
-</section>
-)
+<Grid container spacing={3}>
+{services.map((s) => (
+<Grid key={s.title} item xs={12} sm={6} md={4}>
+<Paper sx={{ p: 2.5, height: "100%", transition: "all .25s ease", "&:hover": { boxShadow: "0 0 24px rgba(212,175,55,0.25)", borderColor: "#2b2b2b", transform: "translateY(-4px)" } }}>
+<Typography variant="h6" sx={{ color: "primary.main", mb: 1 }}>{s.title}</Typography>
+<Typography color="text.secondary">{s.desc}</Typography>
+</Paper>
+</Grid>
+))}
+</Grid>
+</Container>
+);
 }
