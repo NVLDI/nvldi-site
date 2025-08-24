@@ -23,11 +23,11 @@ filter: "saturate(110%)",
 <Stack spacing={2}>
 <Typography variant="h2" sx={{ fontSize: { xs: 42, md: 56 }, lineHeight: 1.05 }}>
 Precision Imaging & Cloud Automation {" "}
-<Box component="span" sx={{ color: "primary.main" }}>for Dental & Print</Box>
+<Box component="span" sx={{ color: "primary.main" }}>for Print , D&C Connect</Box>
 </Typography>
 <Typography variant="h6" color="text.secondary" sx={{ fontWeight: 400 }}>
 Founder-driven engineering since 2019. We build RIP & color systems, real‑time rendering,
-and secure cloud apps for clinics and labs.
+and secure cloud apps for D&C Connect.
 </Typography>
 <Stack direction="row" spacing={2}>
 <Button variant="contained" component={RouterLink} to="/projects">Explore Projects</Button>

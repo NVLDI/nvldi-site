@@ -10,8 +10,8 @@ import Paper from "@mui/material/Paper";
 const services = [
   { title: "Product Engineering (RIP)", desc: "LittleCMS-based ICC workflows, linearization, nesting, Ghostscript integration, real-time rendering with OpenCV, and Qt desktop UIs." },
   { title: "Automation & Hot Folders", desc: "Headless pipelines that watch, process, and deliver jobs automatically — with audit trails, profiles, and fail-safes." },
-  { title: "Dental Icons (SaaS)", desc: "Cross-platform app (React Native + Web) for appointments, follow-ups, and secure media. Push notifications & role-based access." },
-  { title: "Patient Management", desc: "AWS-backed system using Cognito, AppSync, DynamoDB, S3 — per-clinic isolation, billing metrics, and analytics." },
+  { title: "D&C Connect (SaaS)", desc: "Cross-platform app (React Native + Web) for appointments, follow-ups, and secure media. Push notifications & role-based access." },
+  { title: "Workflow Management", desc: "AWS-backed system using Cognito, AppSync, DynamoDB, S3 — per-clinic isolation, billing metrics, and analytics." },
   { title: "DICOM Viewer", desc: "Web/mobile visualization (Cornerstone/VTK.js) with 3D stack views, export to STL/PLY, and low-latency streaming." },
   { title: "AWS End-to-End", desc: "Amplify, AppSync, DynamoDB, S3, Lambda, SES/SNS — automated clinic onboarding, infra as code, and usage-based billing." },
 ];
