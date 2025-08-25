@@ -8,9 +8,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link as RouterLink, NavLink } from "react-router-dom";
 
 const pages = [
-  { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
-  { label: "Projects", to: "/projects" },
+  { label: "Portfolio", to: "/projects" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
@@ -46,7 +45,7 @@ export default function NavBar() {
               color: "text.primary",
               minWidth: 0,
             }}
-            aria-label="NVL Digital Imaging LLP"
+            aria-label="NVL Digital Imaging"
           >
             <Box
               aria-hidden
@@ -60,7 +59,7 @@ export default function NavBar() {
               }}
             />
             <Typography variant="h6" component="span" noWrap sx={{ maxWidth: { xs: "55vw", md: "none" }, fontWeight: 700 }}>
-              NVL Digital Imaging LLP
+              NVL Digital Imaging
             </Typography>
           </Box>
 
