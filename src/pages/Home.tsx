@@ -8,15 +8,6 @@ import { Link as RouterLink } from "react-router-dom";
 
 export default function Home() {
 return (
-<Box sx={{ position: "relative", overflow: "hidden" }}>
-<Box sx={{
-position: "absolute", inset: 0,
-background: `radial-gradient(1200px 600px at -10% -10%, rgba(212,175,55,0.10), transparent 40%),
-radial-gradient(900px 400px at 110% -20%, rgba(212,175,55,0.10), transparent 45%),
-linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0))`,
-filter: "saturate(110%)",
-}} />
-
 
 <Container sx={{ py: { xs: 6, md: 10 } }}>
 <Box sx={{ display: "grid", gridTemplateColumns: { md: "1.1fr 0.9fr" }, gap: 4, alignItems: "center", minHeight: { md: "78vh" } }}>
@@ -41,6 +32,5 @@ and secure cloud apps for D&C Connect.
 </Paper>
 </Box>
 </Container>
-</Box>
 );
 }
